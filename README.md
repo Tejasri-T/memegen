@@ -68,7 +68,7 @@ http://localhost:5173
 ---
 
 ## 📂 Project Structure (Example)
-
+```
 src/
 ├── components/
 │   ├── Header.jsx
@@ -78,7 +78,7 @@ src/
 ├── App.jsx
 ├── main.jsx
 ├── index.css
-
+```
 _Actual structure may vary._
 
 ---
