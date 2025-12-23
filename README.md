@@ -69,25 +69,29 @@ http://localhost:5173
 
 ## 📂 Project Structure (Example)
 ```
-src/
+memegen/
+├── App.jsx
 ├── components/
 │   ├── Header.jsx
-│   ├── Meme.jsx
+│   └── Main.jsx
 ├── images/
-│   └── logo.svg
-├── App.jsx
-├── main.jsx
 ├── index.css
-```
-_Actual structure may vary._
+├── index.html
+├── index.jsx
+├── package.json
+├── README.md
+└── vite.config.ts
 
+```
+
+<!-- 
 ---
 
 ## 📸 Preview
 
 _Add screenshots or GIFs here to showcase your app._
 
----
+--- -->
 
 ## 📌 Future Enhancements
 
