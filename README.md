@@ -1,73 +1,110 @@
-# React + TypeScript + Vite
+# 🎭 ReadMeme Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ReadMeme Generator** is a fun and interactive web application that allows users to instantly generate memes by adding custom text to popular meme images. Users can generate random meme templates, add text, and drag the text anywhere on the image for better positioning.
 
-Currently, two official plugins are available:
+Built using **React + Vite**, this project demonstrates API usage, component-based UI design, and interactive features like drag-and-drop.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🎲 Generate random meme images  
+- ✍️ Add top and bottom text to memes  
+- 🖱️ Draggable text for custom placement  
+- ⚡ Fast development setup using Vite  
+- 🌐 Uses the ImageFlip API to fetch meme templates  
+- 📱 Responsive and lightweight UI  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Frontend:** React  
+- **Build Tool:** Vite  
+- **Language:** JavaScript  
+- **API:** ImageFlip Meme API  
+- **Styling:** CSS  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🔗 API Used
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### ImageFlip Meme API
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+**Endpoint:**
+https://api.imgflip.com/get_memes
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The API provides a list of popular meme templates. A random meme image is selected and displayed whenever the user clicks **Generate Meme**.
+
+---
+
+## ⚙️ How It Works
+
+1. The app fetches meme templates from the ImageFlip API.
+2. Clicking **Generate Meme** selects a random meme image.
+3. Users enter text in two input fields (top and bottom).
+4. The entered text appears on the meme image.
+5. Text elements are draggable, allowing users to reposition them freely.
+
+---
+
+## 📁 Project Setup
+
+### Clone the Repository
+git clone https://github.com/Tejasri-T/memegen.git
+
+### Navigate to the Project Directory
+cd readmeme-generator
+
+### Install Dependencies
+npm install
+
+### Run the Development Server
+npm run dev
+
+The application will run locally at:
+http://localhost:5173
+
+---
+
+## 📂 Project Structure (Example)
+
+src/
+├── components/
+│   ├── Header.jsx
+│   ├── Meme.jsx
+├── images/
+│   └── logo.svg
+├── App.jsx
+├── main.jsx
+├── index.css
+
+_Actual structure may vary._
+
+---
+
+## 📸 Preview
+
+_Add screenshots or GIFs here to showcase your app._
+
+---
+
+## 📌 Future Enhancements
+
+- Download generated memes  
+- Add multiple text layers  
+- Font size, color, and style controls  
+- Mobile-friendly drag support  
+- Share memes directly to social media  
+
+---
+
+## 🧑‍💻 Author
+
+**Tejasri Teyam**
+
+---
+
+## 📜 License
+
+This project is for learning and personal use.
