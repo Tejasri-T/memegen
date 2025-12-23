@@ -1,6 +1,6 @@
-# 🎭 ReadMeme Generator
+# 🎭 Meme Generator
 
-**ReadMeme Generator** is a fun and interactive web application that allows users to instantly generate memes by adding custom text to popular meme images. Users can generate random meme templates, add text, and drag the text anywhere on the image for better positioning.
+**Meme Generator** is a fun and interactive web application that allows users to instantly generate memes by adding custom text to popular meme images. Users can generate random meme templates, add text, and drag the text anywhere on the image for better positioning.
 
 Built using **React + Vite**, this project demonstrates API usage, component-based UI design, and interactive features like drag-and-drop.
 
